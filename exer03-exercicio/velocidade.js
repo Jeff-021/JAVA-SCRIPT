@@ -13,3 +13,5 @@ if (carro1 > carro2) {
 } else {
   alert("o mais rápido é: " + carro2);
 }
+
+// o if serve apenas para true, se for truel vai fazer uma acao, se for false ele vai fazer outra coma ajuda do else

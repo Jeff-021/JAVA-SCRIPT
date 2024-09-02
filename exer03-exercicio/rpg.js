@@ -32,3 +32,5 @@ if (perso1 >= perso2 + escudo) {
       "pontos de vida"
   );
 }
+
+// o if serve apenas para true, se for truel vai fazer uma acao, se for false ele vai fazer outra coma ajuda do else

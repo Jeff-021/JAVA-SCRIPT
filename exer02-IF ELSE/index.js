@@ -5,4 +5,4 @@ if (idade > 18) {
   alert("Voçê é menor de idade");
 }
 
-// o if serve apenas para true, se for trueeel vai fazer uma acao, se for false eel vai fazer outra
+// o if serve apenas para true, se for truel vai fazer uma acao, se for false ele vai fazer outra coma ajuda do else
