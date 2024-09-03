@@ -2,32 +2,26 @@ let opcao = "";
 
 do {
   opcao = prompt(
-    "Seja bem-vindo(a)!\n" +
-      "\nEscolha uma das opções abaixo:" +
-      "\n1 - Opção Um" +
-      "\n2 - Opção Dois" +
-      "\n3 - Opção Três" +
-      "\n4 - Opção Quatro" +
-      "\n5 - Encerar"
+    "Bem Vindo!\n Escolha uma das opções abaixo\n a)\n b)\n c)\n d)\n e)"
   );
 
   switch (opcao) {
-    case "1":
-      alert("Você escolheu a opção 1.");
+    case "a":
+      alert("Você escolheu a opção a.");
       break;
-    case "2":
-      alert("Você escolheu a opção 2.");
+    case "b":
+      alert("Você escolheu a opção b.");
       break;
-    case "3":
-      alert("Você escolheu a opção 3.");
+    case "c":
+      alert("Você escolheu a opção c.");
       break;
-    case "4":
-      alert("Você escolheu a opção 4.");
+    case "d":
+      alert("Você escolheu a opção d.");
       break;
-    case "5":
+    case "e":
       alert("Encerrando o programa...");
       break;
     default:
       alert("Entrada inválida! Escolha uma das cinco opções.");
   }
-} while (opcao !== "5");
+} while (opcao !== "e"); // uma afirmacao falsa pois e é igual a e, tenho que colocar uma afirmacão falsa pra encerrar
