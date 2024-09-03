@@ -45,8 +45,23 @@ console.log(indice); // ver qual posicao o gandalf esta dentro do array
 
 // cortar e concatenar
 
-//slice
+//slice =cortar
 const inverso = arr.slice(-4);
 const copiarUmacopia = arr.slice(0, 4); // ele faz uma cópia parcial do array, iniciando no 0 e acabando no 3, o 4 ele n pega
 console.log(copiarUmacopia);
 console.log(inverso); // o n negativo funciona ao contrario, só comecar a contar -1,-2... no final da lista do array
+
+//concat = concatenar
+const juntar = inverso.concat(copiarUmacopia, "aleatorio");
+console.log(juntar); //os arrays da variavel inverso e copiaruamcopia e um arrray q eu acabei de criar estao dentro dessa variavel
+
+// substituicao de arrays antigos por novos -splice
+
+const removerElementos = juntar.splice(
+  3,
+  2,
+  "array novo",
+  "substituindo os antigos"
+); // os numeros para se colocar nos () sao, 3= significa que a partir do indice 3 ela ira eliminar a quantidade q eu colocar esubstituir em ''
+console.log(juntar);
+console.log(removerElementos);
