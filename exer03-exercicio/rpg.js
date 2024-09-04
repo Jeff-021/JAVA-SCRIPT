@@ -1,19 +1,19 @@
-let nome1 = prompt("Digite o nome do personagem atacante");
-let nome2 = prompt("Digite o nome do personagem defensor");
-let perso01 = prompt("Digite o poder de ataque total do personagem");
-let perso02 = prompt("Digite a quantidade de vida do personagem");
+let nomeAtacante = prompt("Digite o nome do personagem atacante");
+let nomeDefensor = prompt("Digite o nome do personagem defensor");
+let poderDeAtaque1 = prompt("Digite o poder de ataque total do personagem");
+let vidaDefensor2 = prompt("Digite a quantidade de vida do personagem");
 let escudo01 = prompt("Digite a quantidade de escudo, se ele possuir");
 
-let perso1 = parseFloat(perso01);
-let perso2 = parseFloat(perso02);
+let poderDeAtaque = parseFloat(poderDeAtaque1);
+let vidaDefensor = parseFloat(vidaDefensor2);
 let escudo = parseFloat(escudo01);
 let Sobreviveu = perso2 + escudo - perso1;
-let ataque = perso1 - (perso2 + escudo);
+let ataque = nomeAtacante - (nomeDefensor + escudo);
 
-if (perso1 >= perso2 + escudo) {
+if (poderDeAtaque >= poderDeDefesa + escudo) {
   alert(
     "O personagem " +
-      nome2 +
+      nomeDefensor +
       " " +
       "morreu " +
       "pois sofreu um ataque de " +
@@ -23,7 +23,7 @@ if (perso1 >= perso2 + escudo) {
 } else {
   alert(
     "O personagem " +
-      nome2 +
+      nomeDefensor +
       " " +
       "sobreviveu com a ajuda do escudo, ele possui" +
       " " +

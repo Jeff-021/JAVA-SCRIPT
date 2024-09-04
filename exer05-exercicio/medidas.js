@@ -1,11 +1,11 @@
 let valorMetros = prompt("Digite um valor em metros");
-let escolha01 = prompt(
+let opcao = prompt(
   "Com o valor já definido escolha a opção para a conversão\n a) Milímetros\n b) Centímetros\n c) Decímetro\n d) Decâmetro\n e) Hectômetro\n f) Quilômetro"
 );
 
 let valoremMetros = parseFloat(valorMetros); //o case significa o caso que ira acontecer quando aquela opção for escolhida, o default serve para quando nenhuma das opcções foi escolhida aparecer um aviso na tela, o break serve para parar uma ou mais acoes, posso fazer contas no switch, a variavel (valoremmetros) possibilita isso
 
-switch (escolha01) {
+switch (opcao) {
   case "a":
     alert(
       "O resultado em Milímetros do valor " +

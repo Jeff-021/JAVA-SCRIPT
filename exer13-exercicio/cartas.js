@@ -1,7 +1,8 @@
 let quantdeDecartas = 0;
 let opcao = "";
 let nome = "";
-const baralho = []; // tem como fazer um array vazio e dps preenche-lo
+const baralho = [];
+const cartaPuxada = ""; // tem como fazer um array vazio e dps preenche-lo
 
 do {
   opcao = prompt(
@@ -18,10 +19,11 @@ do {
       baralho.unshift(nome);
       break;
     case "b":
-      baralho.shift(nome);
+      const cartaPuxada = baralho.shift(nome); // quant -- serve para diminuir a quant de carta quando eu puxo uma carta
+      quantdeDecartas--;
       alert(
         "A carta que foi puxada foi " +
-          nome +
+          cartaPuxada +
           " pois ela estava no inicio do baralho"
       );
       break;

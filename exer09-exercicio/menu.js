@@ -2,7 +2,7 @@ let opcao = "";
 
 do {
   opcao = prompt(
-    "Bem Vindo!\n Escolha uma das opções abaixo\n a)\n b)\n c)\n d)\n e)"
+    "Bem Vindo!\n Escolha uma das opções abaixo:\n a) Opção A\n b) Opção B\n c) Opção C\n d) Opção D\n e) Encerrar"
   );
 
   switch (opcao) {
@@ -24,4 +24,4 @@ do {
     default:
       alert("Entrada inválida! Escolha uma das cinco opções.");
   }
-} while (opcao !== "e"); // uma afirmacao falsa pois e é igual a e, tenho que colocar uma afirmacão falsa pra encerrar
+} while (opcao !== "e"); // O loop continua até que a opção 'e' seja escolhida para encerrar, pois o do while só encerra quando tem uma afirmacao falsa

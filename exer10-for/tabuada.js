@@ -1,8 +1,9 @@
 let num01 = prompt("Digite um número para saber a sua tabuada de 1 a 20!");
 let num = parseFloat(num01);
-let contagem = "";
+let resultado = "";
 
-for (contagem = 1; contagem <= 20; contagem++) {
-  // a contagem comeca no 1 e termina no 20, e sempre sera adicionado mais um
-  alert("O resultado seria: " + num + "X" + contagem + " = " + num * contagem);
+for (let contagem = 1; contagem <= 20; contagem++) {
+  resultado += num + " X " + contagem + " = " + num * contagem + "\n"; // Adiciona cada resultado à string, esse += serve para colocar todo o resultado da string na variavel vazia
 }
+
+alert(resultado); // Exibe todos os resultados de uma vez
