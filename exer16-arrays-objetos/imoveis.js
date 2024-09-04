@@ -1,5 +1,4 @@
 const arr = [];
-const obj = {};
 let quantDeImoveis = 0;
 let opcao = "";
 let localizacao = "";
@@ -39,17 +38,18 @@ do {
       break;
 
     case "b":
-      alert(
-        "Imóveis salvos: " +
-          quantDeImoveis +
-          "\nimóvel salvo na localização: " +
-          localizacao +
-          " \nCom " +
-          quantDeQuartos +
-          " Quartos\n" +
-          " Garagem? " +
-          garagem
-      );
+      if (quantDeImoveis === 0) {
+        alert("Nenhum imóvel cadastrado.");
+      } else {
+        let listaImoveis = "Imóveis salvos:\n";
+        arr.forEach((imovel, index) => {
+          //O index é uma variável que representa a posição de um elemento dentro de um array.
+          listaImoveis += `${index + 1}) Localização: ${
+            imovel.localizacao
+          }, Quartos: ${imovel.quantDeQuartos}, Garagem: ${imovel.garagem}\n`;
+        });
+        alert(listaImoveis);
+      }
       break;
     case "c":
       alert("Encerrando o chamado...");
