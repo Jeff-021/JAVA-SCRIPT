@@ -56,7 +56,7 @@ do {
     opcao // esse resultado seria pegar o resultado da funcao e colocar nele e exibir, o retorno da funcao é quem faz a conta
   ) {
     case 1:
-      resultado = calcularAreaTriangulo();
+      resultado = calcularAreaTriangulo(); // para trasformar a funcao em uma variavel sempre colocar () pois ela pegara apenas o resultado
       alert("O resultado é " + resultado);
       break;
     case 2:
