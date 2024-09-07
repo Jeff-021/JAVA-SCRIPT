@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escalação do Time</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="escalando.js"></script>
+  </head>
+  <body>
+    <h1>Escalação do Time</h1>
+    <hr />
+    <h2>Escalar Jogador</h2>
+
+    <p class="one">
+      <label for="position">Posição:</label>
+      <input type="text" id="position" />
+    </p>
+    <p class="two">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" />
+    </p>
+    <p class="tre">
+      <label for="number">Número:</label>
+      <input type="number" id="number" />
+    </p>
+    <!--aqui o tipo do input é number -->
+    <div>
+      <button onclick="addPlayer()">Escalar</button>
+    </div>
+    <h2>Remover Jogador</h2>
+    <p class="four">
+      <label for="numberToRemove">Número:</label>
+      <input type="number" id="numberToRemove" />
+      <div><button class="yeye" onclick="removePlayer()">Remover</button></div>
+    </p>
+
+    <h2>Time:</h2>
+    <ul id="team-list"></ul>
+    <!-- time vai todo aqui na ul, pra ficar em esquema de lista -->
+  </body>
+</html>

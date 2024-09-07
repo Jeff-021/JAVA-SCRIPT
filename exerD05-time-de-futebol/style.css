@@ -1,0 +1,37 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+h1 {
+  margin: 1.5em;
+}
+h2 {
+  margin-top: 3em;
+}
+
+.one {
+  margin-top: 3em;
+}
+.two {
+  margin-top: 3em;
+}
+.tre {
+  margin-top: 3em;
+}
+
+body {
+  text-align: center;
+  background-image: url(pexels-mike-1800px.jpg);
+  height: 100%;
+  width: 100%;
+}
+
+div > button {
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+
+.four {
+  margin-top: 3em;
+}
