@@ -12,6 +12,8 @@ form.addEventListener("submit", function (evento) {
     'textarea[name="observations"'
   ).value;
 
+  //para duvidas assistir a aula trabalhando com formularios
+
   // abaixo estara o input da salada, ele a pessoa pode selecionar mais de uma opcao:
 
   let salad = "";

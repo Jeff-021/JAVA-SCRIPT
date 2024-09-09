@@ -1,24 +1,44 @@
 function show() {
-  const contatoLista = document.getElementById("contatoLista");
-  console.log(contatoLista); //serve para editar todos os elementos do id (contatoLista) de uma vez
+  // Obter um elemento único a partir do seu id
+  const contactList = document.getElementById("contact-list");
+  console.log(contactList);
+}
 
-  const listaDeElementos = document.getElementsByTagName("li");
-  console.log(listaDeElementos); // pega elementos de uma tag especifica
+function show() {
+  // Obter vários elementos (HTMLCollection) a partir de um nome de tag
+  const liElements = document.getElementsByTagName("li");
+  console.log(liElements);
+}
 
-  const contatoImput = document.getElementsByClassName("contato-input01");
-  console.log(contatoImput); // pega elementos pela classe
+function show() {
+  // ...
 
-  // isso é uma nodelist, uma nodelist tem elementos diferentes das outras, abaixo esta uma nodelist de um elemento ´so
-  const contato01 = document.getElementsByName("contato1");
-  console.log(contato01);
+  // Obter vários elementos (HTMLCollection) a partir de uma classe
+  const contactInputs = document.getElementsByClassName("contact-input");
+  console.log(contactInputs);
+}
 
-  // uma tag ou até mais especifica
-  const contato = document.querySelectorAll("#contatoLista > li > label");
-  console.log(contato);
-  // o # pq é um id, ele pegará todas as labels
+function show() {
+  // ...
 
-  // ele pegara uma label só e parara
+  // Obter vários elementos (NodeList) a partir do atributo name
+  const contact1 = document.getElementsByName("contact1");
+  console.log(contact1);
+}
 
-  const contato3 = document.querySelector("#conatoLista > li > label");
-  console.log(contato3);
+function show() {
+  // ...
+
+  // Obter vários elementos (NodeList) a partir de uma query (semelhante aos seletores do CSS)
+  const contacts = document.querySelectorAll("#contact-list > li > label");
+  console.log(contacts);
+}
+
+function show() {
+  // ...
+
+  // Obter um elemento a partir de uma query (o primeiro elemento a corresponder)
+  const contact = document.querySelector("#contact-list > li > label");
+  console.log(contact);
+  console.log(contact.textContent);
 }

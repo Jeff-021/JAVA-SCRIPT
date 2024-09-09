@@ -1,15 +1,13 @@
 function addInput() {
-  // essa é a origem, clicando no botao ira acontecer:
-  const ul = document.getElementById("inputs");
+  const ul = document.getElementById("inputs"); //primeiramente tem que determinar onde eu irei adicionar novas coisas, a partir desse ira ser add
 
-  const newli = document.createElement("li"); // criará uma linha dentro de ul
-  newli.className = "list-item"; // essa é a classe dele, para editar dps
-  newli.innerText = "newImput:"; // o titulo do q sera criado
+  const newLi = document.createElement("li"); // criou uma nova linha
+  newLi.innerText = "Novo input: "; // titulo da linha
 
-  const newImput = document.createElement("input");
-  newImput.type = "text";
-  newImput.name = "input";
+  const newInput = document.createElement("input"); // serve para criar o input
+  newInput.type = "text"; // do tipo texto
+  newInput.name = "input";
 
-  newli.appendChild(newImput);
-  ul.appendChild(newli); // isso serve para adicionar a linha a UL, o conteudo na linha, sempre seguindo a hierarquia ul>linha>conteudo>
+  newLi.appendChild(newInput); // a linha é pai do input
+  ul.appendChild(newLi); // a lista é pai da linha
 }
