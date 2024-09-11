@@ -1,22 +1,16 @@
-const entrada1 = prompt("Informe o primeiro número:");
-const entrada2 = prompt("Informe o segundo número:");
+const number01 = prompt("Digite um número!");
+const number02 = prompt("Digite outro número");
 
-const num1 = parseFloat(entrada1);
-const num2 = parseFloat(entrada2); //esse parsefloat serve para converter o a string em numero, p prompt converte tudo em string
+const num01 = parseFloat(number01);
+const num02 = parseFloat(number02);
 
-const soma = num1 + num2;
-const subtracao = num1 - num2;
-const multiplicacao = num1 * num2;
-const divisao = num1 / num2;
+const sum = num01 + num02;
+const subtraction = num01 - num02;
+const multiplication = num01 * num02;
+const division = num01 / num02;
 
-alert(
-  "Resultados:\n" +
-    "\nSoma: " +
-    soma +
-    "\nSubtração: " +
-    subtracao +
-    "\nMultiplicação: " +
-    multiplicacao +
-    "\nDivisão: " +
-    divisao // esse \n serve para pular linha
-);
+confirm("Confirma os dados?");
+alert(`A soma dê ${num01} e ${num01} é ${sum}.
+    A subtração dê ${num01} e ${num01} é ${subtraction}.
+    A multiplicação dê ${num01} e ${num01} é ${multiplication}.
+    A divisão dê ${num01} e ${num01} é ${division}`);
