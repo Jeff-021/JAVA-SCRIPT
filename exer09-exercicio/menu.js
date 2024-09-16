@@ -1,27 +1,29 @@
-let opcao = "";
+const options = "";
+options = prompt(
+  "Olá seja bem vindo ao menu interativo do DoWhile!, escolha uma das opções abaixo:\n a) Opção\n b) Opção \n c) Opção\n d) Opção\n e) Encerrar!"
+);
 
 do {
-  opcao = prompt(
-    "Bem Vindo!\n Escolha uma das opções abaixo:\n a) Opção A\n b) Opção B\n c) Opção C\n d) Opção D\n e) Encerrar"
-  );
-
-  switch (opcao) {
+  switch (options) {
     case "a":
-      alert("Você escolheu a opção a.");
+      alert("Voçê escolheu a opção A");
       break;
+
     case "b":
-      alert("Você escolheu a opção b.");
+      alert("Voçê escolheu a opção B");
       break;
+
     case "c":
-      alert("Você escolheu a opção c.");
+      alert("Voçê escolheu a opção C");
       break;
     case "d":
-      alert("Você escolheu a opção d.");
+      alert("Voçê escolheu a opção D");
       break;
     case "e":
-      alert("Encerrando o programa...");
-      break;
+      alert("Encerrando...");
     default:
       alert("Entrada inválida! Escolha uma das cinco opções.");
   }
-} while (opcao !== "e"); // O loop continua até que a opção 'e' seja escolhida para encerrar, pois o do while só encerra quando tem uma afirmacao falsa
+} while (opcao !== "e");
+
+// O loop continua até que a opção 'e' seja escolhida para encerrar, pois o do while só encerra quando tem uma afirmacao falsa

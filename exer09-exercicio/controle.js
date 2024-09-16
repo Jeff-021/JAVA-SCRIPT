@@ -1,34 +1,36 @@
-let valorRetirado01 = "";
-let valorAdicionado01 = "";
-let quantInicial01 = prompt(
-  "Sejá bem-vindo\nQual seria a quantidade inicial para depósito?"
+let options = "";
+let amountOfMoney1 = prompt(
+  "Olá seja bem vindo ao nosso banco!\n Digite a quantidade de dinheiro disponível!"
 );
 
-let quantInicial = parseFloat(quantInicial01);
-let valorAdicionado = parseFloat(valorAdicionado01);
-let valorRetirado = parseFloat(valorRetirado01);
+let amountOfMoney = parseFloat(amountOfMoney1); // converti o amount pois o prompt trasnforma tudo em string
 
 do {
-  opcao = prompt(
-    "Que maravilha!\nVoçê possui um valor de: " +
-      quantInicial +
-      " Temos opções para voçê!\n a) Adicionar dinheiro\n b) Remover dinheiro\n c) Sair"
+  options = prompt(
+    `Que maravilha!\nVoçê possui um valor de: ${amountOfMoney} reais
+  Temos opções para voçê!\n a) Adicionar dinheiro\n b) Remover dinheiro\n c) Sair`
   );
-
-  switch (opcao) {
+  switch (options) {
     case "a":
-      valorAdicionado = prompt("Qual seria o valor a ser adicionado?");
-      quantInicial += parseFloat(valorAdicionado); // serve para converter de volta para numero, eu ja tinha feito isso mas como eu coloqueia variavel em um prompt ela volta a ser string
+      let addMoney1 = prompt("Qual seria o valor adicionado?");
+      let addMoney = parseFloat(addMoney1);
+      confirm("Confirma essa ação?");
+      amountOfMoney += addMoney;
       break;
+
     case "b":
-      valorRetirado = prompt("Qual seria o valor a ser retirado?");
-      quantInicial -= valorRetirado;
+      let removeMoney1 = prompt("Qual seria o valor para ser retirado?");
+      let removeMoney = parseFloat(removeMoney1);
+      confirm("Confirma essa ação?");
+      amountOfMoney -= removeMoney;
       break;
+
     case "c":
       alert("Encerrando o programa...");
       break;
+
     default:
       alert("Entrada inválida! Escolha uma das opções.");
       break;
   }
-} while (opcao !== "c"); // isso é falso, por isso encerra o programa
+} while (options !== "c");
