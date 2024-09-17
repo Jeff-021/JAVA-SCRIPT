@@ -1,4 +1,4 @@
-const listaDeCompras = ["Açucar", true, 8];
+const listaDeCompras = [];
 
 listaDeCompras[0] = "Arroz";
 listaDeCompras[1] = "Feijão";

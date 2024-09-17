@@ -28,7 +28,7 @@ let ultimoElemento = arr.pop();
 console.log(arr);
 console.log(ultimoElemento);
 
-//shift -remover elemtos no inicio do array
+//shift -remover elementos no inicio do array
 
 ultimoElemento = arr.shift();
 console.log(arr);
