@@ -94,3 +94,12 @@ p {
   margin-top: 1rem;
   font-size: 1.3rem;
 }
+
+#resultado {
+  background-color: cadetblue;
+  color: aliceblue;
+  margin-top: 3rem;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+}
