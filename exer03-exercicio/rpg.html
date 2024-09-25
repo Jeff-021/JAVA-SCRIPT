@@ -3,10 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RPG</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="stylerpg.css" />
   </head>
   <body>
-    <h1>Exercicio correspondente ao IF E ELSE</h1>
+    <div class="input-container">
+      <label for="nome1">Digite o nome de um personagem:</label>
+      <input
+        type="text"
+        id="nome1"
+        name="nome1"
+        class="input"
+        placeholder="Nome do primeiro personagem..."
+      /><br /><br />
+
+      <label for="attack"
+        >Digite também a quantidade de poder de ataque que ele possui:</label
+      >
+      <input
+        type="number"
+        id="attack"
+        name="attack"
+        class="input"
+        placeholder="Poder de ataque..."
+      /><br /><br />
+
+      <label for="nome2"
+        >Digite o nome de um outro persoangem, mas esse será um personagem de
+        defesa:</label
+      >
+      <input
+        type="text"
+        id="nome2"
+        name="nome2"
+        class="input"
+        placeholder="Nome do segundo personagem..."
+      /><br /><br />
+
+      <label for="defense"
+        >Digite um poder de defesa que ele irá possuir:</label
+      >
+      <input
+        type="number"
+        id="defense"
+        name="defense"
+        class="input"
+        placeholder="Defesa..."
+      /><br /><br />
+
+      <label for="shild">Quantos de escudo ele terá a mais na sua vida?:</label>
+      <input
+        type="number"
+        id="shild"
+        name="shild"
+        class="input"
+        placeholder="Escudo..."
+      /><br /><br />
+    </div>
+
+    <button id="button">Hover Me</button>
+    <div id="resultado"></div>
+
     <script src="rpg.js"></script>
   </body>
 </html>

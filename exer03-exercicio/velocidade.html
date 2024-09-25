@@ -3,10 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teste de Velocidade!</title>
-    <script src="velocidade.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="stylecarro.css" />
   </head>
   <body>
-    <h1>Exercicio correspondente ao IF E ELSE</h1>
+    <div class="input-container">
+      <label for="nome">Nome do primeiro carro:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        class="input"
+        placeholder="Nome do primeiro carro..."
+      /><br /><br />
+
+      <label for="velocidade1">Velocidade:</label>
+      <input
+        type="number"
+        id="velocidade1"
+        name="velocidade1"
+        class="input"
+        placeholder="Velocidade..."
+      /><br /><br />
+
+      <label for="nome2">Nome do segundo carro:</label>
+      <input
+        type="text"
+        id="nome2"
+        name="nome2"
+        class="input"
+        placeholder="Nome do segundo carro..."
+      /><br /><br />
+
+      <label for="velocidade2">Velocidade:</label>
+      <input
+        type="number"
+        id="velocidade2"
+        name="velocidade2"
+        class="input"
+        placeholder="Velocidade..."
+      /><br /><br />
+    </div>
+
+    <button id="button">Hover Me</button>
+    <div id="resultado"></div>
+
+    <script src="velocidade.js"></script>
   </body>
 </html>
